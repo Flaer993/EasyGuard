@@ -11,7 +11,7 @@ cascadePath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath)
 
 # Для распознавания используем локальные бинарные шаблоны
-recognizer = cv2.createLBPHFaceRecognizer(1,8,8,8,123)
+recognizer = cv2.face.LBPHFaceRecognizer_create(1,8,8,8,123)
 
 
 def get_images(path):
@@ -40,7 +40,7 @@ def get_images(path):
     return images, labels
 
 # Путь к фотографиям
-path = './yalefaces'
+path = '/Users/borisprudnikov/Desktop/SHP/EasyGuard/yalefaces'
 # Получаем лица и соответствующие им номера
 images, labels = get_images(path)
 cv2.destroyAllWindows()
@@ -69,8 +69,8 @@ for image_path in image_paths:
         number_actual = int(os.path.split(image_path)[1].split(".")[0].replace("subject", ""))
         
         if number_actual == number_predicted:
-            print "{} is Correctly Recognized with confidence {}".format(number_actual, conf)
+            print ("{} is Correctly Recognized with confidence {}".format(number_actual, conf))
         else:
-            print "{} is Incorrect Recognized as {}".format(number_actual, number_predicted)
+            print ("{} is Incorrect Recognized as {}".format(number_actual, number_predicted))
         cv2.imshow("Recognizing Face", image[y: y + h, x: x + w])
         cv2.waitKey(1000)
