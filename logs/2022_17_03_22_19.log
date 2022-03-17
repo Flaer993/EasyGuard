@@ -1,0 +1,2 @@
+2022-03-17 22:20:26,702 ~ Serial Logger ~ INFO ~ Program Started
+2022-03-17 22:20:26,704 ~ Serial Logger ~ ERROR ~ Got Fatal error - [Errno 2] could not open port /dev/cu.usbserial-1410: [Errno 2] No such file or directory: '/dev/cu.usbserial-1410'
