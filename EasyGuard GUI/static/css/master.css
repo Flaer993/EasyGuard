@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --font-large: 96px;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background: linear-gradient(180deg, #BEBEBE 31.25%, rgba(0, 0, 0, 0) 100%);
+}
+
+h1 {
+    font-size: var(--font-large);
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-logo {
+    width: 113px;
+    height: 108px;
+    position: absolute;
+}
+
+#menu-title {
+    padding-top: 10%;
+}
+
+.button-holder {
+    padding-top: 7%;
+    width: inherit;
+}
+
+.button-holder * {
+    width: 500px;
+    height: 150px;
+    font-size: var(--font-large);
+}
+
+#log-menu, #cameras-menu {
+    padding-top: 3%;
+}
+
+#logs-text {
+    background: none;
+    width: inherit;
+    font-size: 24px;
+}
+
+#videocam {
+    width: 600px;
+    height: 500px;
+}
+
+#cam-title {
+    padding-top: 2%;
+}

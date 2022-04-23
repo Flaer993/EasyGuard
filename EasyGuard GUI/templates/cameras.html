@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block main %}
+<h1 class="text-center" id="cameras-menu">Cameras</h1>
+<div class="container d-flex justify-content-between">
+    <div class="button-holder d-flex flex-column justify-content-around" id="btn-camera-holder">
+        <a class="btn btn-light">Next cam</a>
+        <a class="btn btn-light">Prev cam</a>
+    </div>
+    <div>
+        <img src="{{ url_for('video_feed') }}" href="videocamera" id="videocam">
+        <h2 class="text-center" id="cam-title">{{ camera_title }}</h2>
+    </div>
+</div>
+{% endblock %}
